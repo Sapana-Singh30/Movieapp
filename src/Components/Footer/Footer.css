@@ -1,0 +1,94 @@
+.footer{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color:rgb(41, 40, 40); */
+   height:37vh;
+
+
+   /* From https://css.glass */
+background: rgba(187, 180, 180, 0.12);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.4px);
+-webkit-backdrop-filter: blur(3.4px);
+border: 1px solid rgba(187, 180, 180, 0.09);
+
+
+}
+
+.footer_menu{
+    display: flex;
+    flex-direction: column;
+    /* padding: 0.5rem; */
+}
+.footer_menu_heading{
+    padding: 0.5rem;
+}
+.footer_menu_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0.5rem; */
+}
+.footer_menu_data a{
+    text-decoration: none;
+    color: white;
+    padding: 0.25rem;
+}
+.footer_contact{
+    display:flex;
+    flex-direction: column;
+}
+.footer_contact_heading{
+    padding: 0.8rem;
+}
+
+.footer_contact_data{
+display: flex;
+justify-content: center;
+align-items: center;
+/* padding: 0.5rem; */
+}
+.footer_contact_data a{
+ color: white;   
+ padding: 0.5rem;
+ font-size: 2rem;
+}
+.footer_logo_copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_logo{
+    padding: 0.5rem;
+}
+
+.footer_copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.footer_copyright p{
+    padding: 0.2rem;
+}
+
+.footer_copyright small{
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 735px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height:60vh ;
+    }
+}

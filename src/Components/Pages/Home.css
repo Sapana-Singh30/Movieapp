@@ -1,0 +1,149 @@
+.home-slider{
+    /* background-color: red; */
+    /* position: relative; */
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: 5rem 1fr 5rem;
+}
+.slider-contnt{
+    /* background-color: yellow; */
+    /* background-color: blue; */
+    /* position: relative; */
+    display: grid;
+    grid-column: 2/3;
+}
+.posterImage{
+    /* background-color: blue; */
+    /* grid-column: 2/3; */
+    position: relative;
+    height: 600px;
+}
+
+.posterImage > img{
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+/* .overlay-header{ 
+position: relative; 
+width: 100%;
+    height:200px;
+    background-color: yellow;
+} */
+
+.posterImage_overlay{
+    position: absolute;
+    height: 300px;
+    width: 80%;
+    opacity: 1;
+border:10px solid red;
+background-color: red;
+
+/* position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 1;
+    transition: opacity .3s; */
+} 
+
+/* .overlay-header{
+background-color: green;
+height: 80%; 
+position: absolute; 
+}  */
+
+
+
+
+
+/* .posterImage_overlay{ 
+   From https://css.glass
+background: rgba(230, 141, 141, 0.26); 
+border-radius: 16px; 
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(230, 141, 141, 0.3);
+    position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 1;
+    transition: opacity .3s; 
+
+
+    
+}*/
+
+ /* .posterImage_overlay:hover{
+    opacity: 1;
+}
+
+.posterImage_title{
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+.posterImage_runtime{
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.posterImage_rating{
+    margin-left: 3rem;
+}
+
+.posterImage_description{
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    text-align: left;
+    width: 50%;
+}  */
+/* 
+@media screen and (max-width: 640px){
+    .carousel .control-dots {
+        position: absolute;
+        bottom: 25rem;
+    }
+} */
+
+/* @media screen and (max-width: 850px){
+    .posterImage_title{
+        font-weight: 900;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    .posterImage_runtime{
+        font-size: 1rem;
+        margin-bottom: 3.5rem;
+        }
+        
+        .posterImage_rating{
+            margin-left: 3rem;
+        }   
+    .posterImage_description{
+        font-style: italic;
+        font-size: 0.75rem;
+        margin-bottom: 10rem;
+        display: flex;
+        text-align: left;
+        width: 60%;
+    }
+} */
