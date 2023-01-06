@@ -9,4 +9,19 @@
 display: flex;
 flex-direction: column;
 }
+.search_input{
+    border:2px solid black;
+    /* border-radius:12px; */
+}
+.search_input input{
+    padding: 6px;
+    border-radius:5px;
 
+    border: 2px solid black;
+    /* border-radius:2px;
+    outline: 1px solid violet; */
+}
+
+.search_input text{
+    border-radius:2px;
+}

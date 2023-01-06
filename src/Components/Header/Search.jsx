@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Search.css";
 // import Cards from '../Card/Cards';
 import { useNavigate } from 'react-router-dom';
 
@@ -90,7 +91,7 @@ const sendQuery = (id) => {
     return (
         <>
             <div className='movie_search'>
-                <div>
+                <div className='search_input'>
                     <input type="text" placeholder='Search here'
                         value={query}
                         onChange={handlechange}

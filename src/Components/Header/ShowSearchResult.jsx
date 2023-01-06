@@ -19,7 +19,10 @@ useEffect( () => {
     console.log(hello);
   return (
     <>
-    <div>showSearchResult</div>
+    <div className='show_result_heading'>
+      <h4>See result about : </h4>
+      {/* <h2>{movie movie.original_title}</h2> */}
+      </div>
  <div className="list_cards">
                     {
                         hello.map(movie => (
