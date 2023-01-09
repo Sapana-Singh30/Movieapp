@@ -10,6 +10,7 @@ display: flex;
 flex-direction: column;
 }
 .search_input{
+    border-radius:6px;
     border:2px solid black;
     /* border-radius:12px; */
 }

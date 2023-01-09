@@ -93,7 +93,7 @@ const sendQuery = (id) => {
         <>
             <div className='movie_search'>
                 <div className='search_input'>
-                    <input type="text" placeholder='Search here'
+                    <input type="text" placeholder='Search movie'
                         value={query}
                         onChange={handlechange}
                         onKeyUp={handleClick}

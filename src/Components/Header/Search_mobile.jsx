@@ -30,7 +30,7 @@ return(
     <>
     <div className='movie_search_mobile'>
     <div className='search_input_mobile'>
-        <input type="text" placeholder='Search here'
+        <input type="text" placeholder='Search movie'
             value={query_mobile}
             onChange={handlechange_mobile}
             onKeyUp={handleClick_mobile}
