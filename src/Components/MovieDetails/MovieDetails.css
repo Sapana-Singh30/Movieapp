@@ -2,8 +2,9 @@
     width: 100%;
     position: relative;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
+
 }
 
 .movie__intro {
@@ -13,7 +14,7 @@
 .movie__backdrop {
     width: 100%;
     height: 500px;
-    object-fit:cover;
+    object-fit: cover;
     object-position: 0 35%;
 }
 
@@ -30,20 +31,22 @@
 }
 
 .movie__poster {
-    width:300px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
 }
 
 .movie__detailRight {
+    /* background-color: red; */
+    /* background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1)); */
     color: white;
     display: flex;
     flex-direction: column;
-    height: 450px;
-    justify-content:space-between ;
+    /* height: 450px; */
+    justify-content: space-between;
 }
 
-.movie__detailRightTop > div{
+.movie__detailRightTop>div {
     text-shadow: 0px 0px 5px #000000;
     margin-bottom: .5rem;
 }
@@ -82,7 +85,8 @@
     position: relative;
     align-items: center;
 }
-.synopsisText > div:last-of-type {
+
+.synopsisText>div:last-of-type {
     margin-left: auto;
 }
 
@@ -111,12 +115,12 @@
 }
 
 .movie__homeButton {
-    background-color:rgb(255, 0, 0);
-    
+    background-color: rgb(255, 0, 0);
+
 }
 
 .movie__imdbButton {
-    background-color:#f3ce13;
+    background-color: #f3ce13;
 }
 
 .newTab {
@@ -142,4 +146,133 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 735px) {
+    .movie__backdrop {
+        display: none;
+    }
+
+    .movie__detail {
+        flex-direction: column;
+        bottom: 0px;
+        /* width: 100%; */
+
+    }
+    .movie__detailLeft{
+        margin-right: 0px;
+    }
+    .movie__poster {
+        /* position: absolute; */
+    }
+
+    .movie__name {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    .movie__imdbButton {
+        /* display: none; */
+    }
+
+    .newTab {
+        /* display: none; */
+    }
+
+    .movie__production {
+
+        /* display: none; */
+
+    }
+    .movie__detailRight{
+        margin-top: 0.7rem;
+        background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+        width:95%;
+    }
+
+
+
+    .productionCompanyImage {
+        /* display: none; */
+
+    }
+
+    .movie__links {
+        width: 80%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .movie__genres{
+        display: flex;
+        flex-wrap: wrap;
+        margin: .5rem 0;
+    }
+    
+.movie__genre {
+    padding: 0.8rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 0.3rem;
+}
+    .movie__heading {
+        /* display: none; */
+        /* flex-direction: column; */
+        display: flex;
+        /* flex-direction: row; */
+        font-size: 2rem;
+    }
+    .movie_heading_sub{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .movie__Button {
+        padding: 0.8rem 1.5rem;
+        width: 110px;
+    }
+
+    /* .movie__detail{
+    display: none;
+} */
+    .synopsisText {
+        position: static !important;
+    }
+
+    .movie {
+        position: static !important;
+    }
+
+    .movie__detail {
+        position: static !important;
+    }
+
+    .newTab {
+        font-size: 0.8rem;
+        margin-left: 0.4rem;
+        /* display: none; */
+    }
+
+    .movie__production {
+        /* width: 85%;
+        display: flex;
+        justify-content: center; */
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .movie__productionComapany {
+        background-color: white;
+        width: 50px;
+    }
+
+    .movie__links {
+        position: static !important;
+    }
+
+    .movie__poster {
+        position: static;
+    }
 }

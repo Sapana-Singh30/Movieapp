@@ -60,12 +60,14 @@ const getData = () =>{
             </div>
             <div className="movie__links">
                 <div className="movie__heading">Useful Links</div>
+                <div className="movie_heading_sub">
                 {
                     currentMovieDetail && currentMovieDetail.homepage && <a href={currentMovieDetail.homepage} target="_blank" style={{textDecoration: "none"}}><p><span className="movie__homeButton movie__Button">Homepage <i className="newTab fas fa-external-link-alt"></i></span></p></a>
                 }
                 {
                     currentMovieDetail && currentMovieDetail.imdb_id && <a href={"https://www.imdb.com/title/" + currentMovieDetail.imdb_id} target="_blank" style={{textDecoration: "none"}}><p><span className="movie__imdbButton movie__Button">IMDb<i className="newTab fas fa-external-link-alt"></i></span></p></a>
                 }
+                </div>
             </div>
             <div className="movie__heading">Production companies</div>
             <div className="movie__production">

@@ -52,9 +52,10 @@ const sendQuery = (id) => {
         state:{
     id: query
         }
+        
     })
 
-
+    setQuery("")
 }
 
 

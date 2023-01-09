@@ -5,6 +5,7 @@ import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
 import { BiMenuAltRight, BiSearch } from "react-icons/bi";
 import Search from "./Search";
+import Search_mobile from "./Search_mobile";
 
 
 const Header = () => {
@@ -12,31 +13,44 @@ const Header = () => {
     const [click, setClick] = useState(false);
     const [mobileSearch, setMobileSearch] = useState(false);
 
-    // document.getElementsByClassName("active")[0].style.display = "none";
-
+    // if (click === false) {
+    //     document.getElementsByClassName("active")[0].style.display = "none";
+    // }
     const handleClick = () => {
+        // console.log("click",click)
 
         setClick(!click);
-        if (!click) {
+        // console.log("click",click)
+        if (click === true) {
+
             document.getElementsByClassName("active")[0].style.display = "none";
         }
         else {
-            document.getElementsByClassName("mobile_search_header")[0].style.display = "none";
+            if(mobileSearch === true ){
+                document.getElementsByClassName("mobile_search_header")[0].style.display = "none";
+                setMobileSearch(!mobileSearch);
+            }
+            
             document.getElementsByClassName("active")[0].style.display = "flex";
 
         }
-
+        // 
     };
 
 
     const handleSearch = () => {
         setMobileSearch(!mobileSearch);
-        if (!mobileSearch) {
+        if (mobileSearch === true) {
 
             document.getElementsByClassName("mobile_search_header")[0].style.display = "none";
+
         }
         else {
-            document.getElementsByClassName("active")[0].style.display = "none";
+            if(click === true){
+                document.getElementsByClassName("active")[0].style.display = "none";
+                setClick(!click);
+            }
+           
             document.getElementsByClassName("mobile_search_header")[0].style.display = "flex";
         }
     };
@@ -138,8 +152,9 @@ const Header = () => {
             <div className="mobile_search_header">
                 <div className="mobile_search_midle">
                     <div className="mobile_search">
-                        <input type="text" placeholder="Search here..." />
-                        < BiSearch className="mobile_searchIcon" />
+                        {/* <input type="text" placeholder="Search here..."/>
+                        < BiSearch className="mobile_searchIcon" /> */}
+                        <Search_mobile />
                     </div>
                 </div>
             </div>

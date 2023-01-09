@@ -18,7 +18,7 @@ const New = () => {
 
     return (
         <>
-            <div className="main-slider">
+            <div className="main_slider">
                 <Carousel
                     showThumbs={false}
                     autoPlay={true}
@@ -31,10 +31,12 @@ const New = () => {
                             <Link style={{ textDecoration: "none", color: "white" }} to={`/movie/${movie.id}`}>
 
 
-                                <div className="header-sub">
+                                <div className="header_sub">
                                     <div className="sub">
-                                      
+                                      {/* <div className="sub_poster"> */}
                                         <img className="poster" src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} alt="" />
+                                        {/* fgtfvhgbjh */}
+                                        {/* </div> */}
                                         <div className="overlay-header">
                                             <div id="col-rvrs" className="overlay">
                                                 <div className='posterImage_title'>

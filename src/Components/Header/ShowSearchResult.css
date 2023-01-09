@@ -1,0 +1,20 @@
+.show_result {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.show_result_heading {
+    padding: 2rem;
+    font-size: 1rem;
+    margin-bottom: -5rem;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+i {
+    font-size: 2rem;
+}

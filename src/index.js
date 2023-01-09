@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Header from './Components/Header/Header';
 import ErrorPage from './Components/Error/ErrorPage';
 // import Home from './Components/Pages/Home';
-import New from "./Components/Pages/New";
+// import New from "./Components/Pages/New";
 // import Footer from './Components/Footer/Footer';
 // import Footer from '../Components/Footer/Footer';
 import MovieList from './Components/MovieList/MovieList';
@@ -13,6 +13,7 @@ import MovieDetails from "./Components/MovieDetails/MovieDetails";
 // import { Outlet } from 'react-router-dom';
 // import ShowSearchResult from './Components/Header/ShowSearchResult';
 import ShowSearchResult from './Components/Header/ShowSearchResult';
+import HomeSwiper from './Components/Pages/HomeSwiper';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         
-        element: <New />,
+        element:
+       ( <>
+       <HomeSwiper />
+       <MovieList /> 
+        </> ),
 
         // <>
         

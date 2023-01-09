@@ -1,0 +1,31 @@
+.search_input_mobile{
+    display: flex  ;
+}
+
+.search_input_mobile input{
+    outline: none;
+    /* From https://css.glass */
+    background: rgba(255, 228, 228, 0.2);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 228, 228, 0.3);
+    width: 80vw;
+    padding: 0.8rem;
+    border: none;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.mobile_searchIcon {
+    background-color: white;
+    padding: 0.4rem;
+    /*    outline: none;
+    border: none;*/
+    color: black;
+    font-size: 2.6rem;
+}
