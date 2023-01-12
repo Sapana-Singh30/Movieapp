@@ -16,6 +16,12 @@ const Header = () => {
     // if (click === false) {
     //     document.getElementsByClassName("active")[0].style.display = "none";
     // }
+
+const handleHeading = () => {
+    document.getElementsByClassName("active").style.display = "none";
+}
+
+
     const handleClick = () => {
         // console.log("click",click)
 
@@ -26,11 +32,11 @@ const Header = () => {
             document.getElementsByClassName("active")[0].style.display = "none";
         }
         else {
-            if(mobileSearch === true ){
+            if (mobileSearch === true) {
                 document.getElementsByClassName("mobile_search_header")[0].style.display = "none";
                 setMobileSearch(!mobileSearch);
             }
-            
+
             document.getElementsByClassName("active")[0].style.display = "flex";
 
         }
@@ -46,11 +52,11 @@ const Header = () => {
 
         }
         else {
-            if(click === true){
+            if (click === true) {
                 document.getElementsByClassName("active")[0].style.display = "none";
                 setClick(!click);
             }
-           
+
             document.getElementsByClassName("mobile_search_header")[0].style.display = "flex";
         }
     };
@@ -144,14 +150,14 @@ const Header = () => {
             </div>
             <div className="active">
                 <div className="mobile-heading">
-                    <Link to="/movies/popular" className="active-headings">Popular</Link>
-                    <Link to="/movies/top_rated" className="active-headings">Top_Rated</Link>
-                    <Link to="/movies/upcoming" className="active-headings">Upcoming</Link>
+                    <Link to="/movies/popular" className="active-headings" onClick={handleHeading}>Popular</Link>
+                    <Link to="/movies/top_rated" className="active-headings" onClick={handleHeading}>Top_Rated</Link>
+                    <Link to="/movies/upcoming" className="active-headings" onClick={handleHeading}>Upcoming</Link>
                 </div>
             </div>
             <div className="mobile_search_header">
                 <div className="mobile_search_midle">
-                    <div className="mobile_search">
+                    <div className="mobile_search" >
                         {/* <input type="text" placeholder="Search here..."/>
                         < BiSearch className="mobile_searchIcon" /> */}
                         <Search_mobile />
